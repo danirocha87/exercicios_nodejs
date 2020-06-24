@@ -1,9 +1,9 @@
-let rs = require("readline-sync");
+let rs = require("readline-sync")
 
-let numvoo = rs.question("Qual e seu voo?")
-let fileira = rs.question("Em qual fileira deseja sentar?")
-console.log("Cartao de embarque para o voo de numero:" +numvoo)
- console.log("=========================================")
+let voo = rs.question("Qual o numero do voo do usuario")
+let fileira = rs.question("Em qual fileira o usuario deseja sentar")
+console.log ("Cartao de embarque para o voo de numero:" +voo)
+console.log ("=========================================")
 
-console.log("Voce sentara na fileira:" +fileira)
-console.log("============================")
+console.log ("Voce sentara na fileira:" +fileira)
+console.log ("===================================")

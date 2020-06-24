@@ -1,0 +1,49 @@
+let rs = require('readline-sync');
+
+let dia = rs.questionFloat('Que dia vc nasceu');
+
+let mes = rs.questionFloat('E o mes');
+
+
+switch(mes)
+{
+    case 3:
+        console.log(dia >= 21 ? 'Áries': 'Peixes');
+        break;
+    case 4:
+        console.log(dia >= 21 ? 'Touro': 'Áries');
+        break;
+    case 5:
+        console.log(dia >= 21 ? 'Gêmeos': 'Touro');
+        break;
+    case 6:
+        console.log(dia >= 21 ? 'Câncer': 'Gêmeos');
+        break;
+    case 7 :
+        console.log(dia >= 23 ? 'Leão': 'Câncer');
+        breank;
+    case 8 :
+        console.log(dia >= 23 ? 'Virgem' : 'Leão');
+        break;
+    case 9:
+        console.log(dia >= 23 ? 'Libra': 'Virgem');
+        break;
+    case 10:
+        console.log(dia >= 23 ? 'Escorpião' : 'Libra');
+        break;
+    case 11:
+        console.log(dia >= 22 ? 'Sagitário': 'Escorpião');
+        break;
+    case 12:
+        console.log(dia >= 22 ? 'Capicórnio': 'Sagitário');
+        break;
+    case 1 :
+        console.log(dia >= 21 ? 'Aquarário' : 'Capricórnio');
+        break;
+    case 2 :
+        console.log(dia >= 19 ? 'Peixes': 'Aquário');
+        break;
+    default :
+        console.log('Não encontrei o mês');
+        break;
+}
